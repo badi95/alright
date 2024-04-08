@@ -157,7 +157,7 @@ class WhatsApp(object):
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    "/html/body/div[1]/div/div/div[4]/div/div[1]/div/div/div[2]/div/div[1]",
+                    '//*[@id="side"]/div[1]/div/div[2]/div[2]/div/div[1]',
                 )
             )
         )
@@ -499,7 +499,7 @@ class WhatsApp(object):
 
     def add_caption(self, message: str, media_type: str = "image"):
         xpath_map = {
-            "image": "/html/body/div[1]/div/div/div[3]/div[2]/span/div/span/div/div/div[2]/div/div[1]/div[3]/div/div/div[2]/div[1]/div[1]",
+            "image": '//*[@id="app"]/div/div[2]/div[2]/div[2]/span/div/span/div/div/div[2]/div/div[1]/div[3]/div/div/div[2]/div[1]/div[1]',
             "video": "/html/body/div[1]/div/div/div[3]/div[2]/span/div/span/div/div/div[2]/div/div[1]/div[3]/div/div/div[1]/div[1]",
             "file": "/html/body/div[1]/div/div/div[3]/div[2]/span/div/span/div/div/div[2]/div/div[1]/div[3]/div/div/div[1]/div[1]",
         }
@@ -525,7 +525,7 @@ class WhatsApp(object):
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    '//*[@id="app"]/div[1]/div/div[3]/div[2]/span/div/span/div/div/div[2]/div/div[2]/div[2]/div/div/span',
+                    '//*[@id="app"]/div/div[2]/div[2]/div[2]/span/div/span/div/div/div[2]/div/div[2]/div[2]/div/div',
                 )
             )
         )
@@ -555,7 +555,7 @@ class WhatsApp(object):
                 EC.presence_of_element_located(
                     (
                         By.XPATH,
-                        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[1]/div[2]/div/span/div/ul/div/div[2]/li/div/input',
+                        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[1]/div/div/span/div/ul/div/div[2]/li/div/input',
                     )
                 )
             )
