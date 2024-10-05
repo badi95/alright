@@ -491,7 +491,7 @@ class WhatsApp(object):
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[1]/div[2]/div/div/div/span',
+                    '//*[@id="main"]/footer/div[1]/div/span/div/div[1]/div[2]/div/div/div/span',
                 )
             )
         )
@@ -555,7 +555,7 @@ class WhatsApp(object):
                 EC.presence_of_element_located(
                     (
                         By.XPATH,
-                        '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[1]/div/div/span/div/ul/div/div[2]/li/div/input',
+                        '//*[@id="main"]/footer/div[1]/div/span/div/div[1]/div[2]/div/span/div/ul/div/div[2]/li/div/input',
                     )
                 )
             )
