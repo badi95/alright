@@ -161,7 +161,7 @@ class WhatsApp(object):
                 )
             )
         )
-        search_box.clear()
+        # search_box.clear()
         search_box.send_keys(username)
         search_box.send_keys(Keys.ENTER)
         try:
@@ -499,7 +499,7 @@ class WhatsApp(object):
 
     def add_caption(self, message: str, media_type: str = "image"):
         xpath_map = {
-            "image": '//*[@id="app"]/div/div[3]/div/div[2]/div[2]/span/div/div/div/div[2]/div/div[1]/div[3]/div/div/div[2]/div[1]/div[1]',
+            "image": "/html/body/div[1]/div/div/div[3]/div/div[2]/div[2]/span/div/div/div/div[2]/div/div[1]/div[3]/div/div/div/div[1]/div[1]",
             "video": "/html/body/div[1]/div/div/div[3]/div[2]/span/div/span/div/div/div[2]/div/div[1]/div[3]/div/div/div[1]/div[1]",
             "file": "/html/body/div[1]/div/div/div[3]/div[2]/span/div/span/div/div/div[2]/div/div[1]/div[3]/div/div/div[1]/div[1]",
         }
