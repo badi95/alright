@@ -487,15 +487,16 @@ class WhatsApp(object):
         self.send_message(message)
 
     def find_attachment(self):
-        clipButton = self.wait.until(
+        plusButton = self.wait.until(
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    '//*[@id="main"]/footer/div[1]/div/span/div/div[1]/div/button',
+                    # '//*[@id="main"]/footer/div[1]/div/span/div/div[1]/div/button',
+                    '//*[@id="main"]/footer/div[1]/div/span/div/div[2]/div/div[1]/button/span',
                 )
             )
         )
-        clipButton.click()
+        plusButton.click()
 
     def add_caption(self, message: str, media_type: str = "image"):
         xpath_map = {
